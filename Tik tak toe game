@@ -1,0 +1,71 @@
+from tkinter import *
+from tkinter.font import Font
+
+root = Tk()
+root.configure(bg='silver')
+
+font = Font(root,
+    family='mono type cursiver',
+    size=18,
+    weight='bold')
+
+text1 = Label(root,text='tgj67ytf4565hr67ugyuyggtf676fyguyrys', bg='silver',fg='silver').grid(row=0,column=0)
+text2 = Label(root,text='tgj67yt5ryrys', font=font).grid(row=1,column=0)
+text3 = Label(root,text='tgj67ytfryrys', font=font).grid(row=2,column=0)
+text4 = Label(root,text='tgj67ytf4yrys', font=font).grid(row=3,column=0)
+text6 = Label(root,text='tgj67ytfrryry', font=font).grid(row=4,column=0)
+text7 = Label(root,text='tgj67ytfrryry', font=font).grid(row=5,column=0)
+text8 = Label(root,text='tgj67ytfrryry', font=font).grid(row=6,column=0)
+text9 = Label(root,text='tgj67ytf47ys', fg='silver',bg='silver').grid(row=7,column=0)
+enter1 = (root)
+enter2 = (root)
+enter3 = (root)
+enter4 = (root)
+enter5 = (root)
+enter6 = (root)
+enter7 = (root)
+enter8 = (root)
+enter9  = (root)
+
+
+display = Label(root , bg= 'pink', fg= 'green')
+display['text'] = 'O turn'
+
+def press(x,y):
+    a1 = Label(root, bg='pink', fg='green')
+    if display ['text'] == 'O turn':
+        a1['text'] = 'O'
+        display ['text'] = 'X turn'
+    else:
+        a1['text'] = 'X'
+        display ['text'] = 'O turn'
+    a1.place(height=200,width=200,x=x,y=y)
+    
+      
+
+b1 = Button(root,text='',fg='silver', bg='pink', command= lambda x =0, y=60: press(x,y),font=font).place(height=200,width=200,x=0,y=60)
+
+b2 = Button(root,text='',fg='silver', bg='pink', command= lambda x =200, y=60: press(x,y),font=font).place(height=200,width=200,x=200,y=60)
+
+b3 = Button(root,text='',fg='silver', bg='pink', command=lambda x =400, y=60: press(x,y),font=font).place(height=200,width=200,x=400,y=60)
+
+b4 = Button(root,text='',fg='silver', bg='pink', command=lambda x =0, y=260: press(x,y), font=font).place(height=200,width=200,x=0,y=260)
+
+b5 = Button(root,text='',fg='silver', bg='pink', command=lambda x =200, y=260: press(x,y),font=font).place(height=200,width=200,x=200,y=260)
+
+b6 = Button(root,text='',fg='silver', bg='pink', command=lambda x =400, y=260: press(x,y),font=font).place(height=200,width=200,x=400,y=260)
+
+b7 = Button(root,text='',fg='silver', bg='pink', command=lambda x =0, y=460: press(x,y),font=font).place(height=200,width=200,x=0,y=460)
+
+b8 = Button(root,text='',fg='silver', bg='pink', command=lambda x =200, y=460: press(x,y),font=font).place(height=200,width=200,x=200,y=460)
+
+b9 = Button(root,text='',fg='silver', bg='pink', command=lambda x =400, y=460: press(x,y),font=font).place(height=200,width=200,x=400,y=460)
+
+
+
+display.place(height=60,width=600)
+
+root.mainloop()
+ 
+    
+
